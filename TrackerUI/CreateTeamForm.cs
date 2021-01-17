@@ -61,7 +61,7 @@ namespace TrackerUI
 					cellphoneText.Text
 				);
 
-				model = GlobalConfig.Connection.CreatePerson(model);
+				GlobalConfig.Connection.CreatePerson(model);
 
 				selectedTeamMembers.Add(model);
 				WireUpLists();
@@ -118,7 +118,7 @@ namespace TrackerUI
 				selectedTeamMembers
 			);
 
-			t = GlobalConfig.Connection.CreateTeam(t);
+			GlobalConfig.Connection.CreateTeam(t);
 
 			callingForm.TeamComplete(t);
 

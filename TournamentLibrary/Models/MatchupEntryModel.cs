@@ -13,6 +13,10 @@ namespace TournamentLibrary.Models
 		/// </summary>
 		public int Id { get; set; }
 		/// <summary>
+		/// The unique identifier for the competing team
+		/// </summary>
+		public int TeamCompetingId { get; set; }
+		/// <summary>
 		/// Represents one team in the matchup.
 		/// </summary>
 		public TeamModel TeamCompeting { get; set; }
@@ -20,6 +24,10 @@ namespace TournamentLibrary.Models
 		/// Represents score for this particular team.
 		/// </summary>
 		public double Score { get; set; }
+		/// <summary>
+		/// The unique identifier for the parent matchup (team).
+		/// </summary>
+		public int ParentMatchupId { get; set; }
 		/// <summary>
 		/// Represents the matchup that this team came 
 		/// from as the winner.
